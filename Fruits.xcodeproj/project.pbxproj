@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C41F8A742176374800389947 /* lol.plist in Resources */ = {isa = PBXBuildFile; fileRef = C41F8A732176374800389947 /* lol.plist */; };
+		C41F8A7621763BDD00389947 /* myPlistFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = C41F8A7521763BDD00389947 /* myPlistFile.plist */; };
+		C430A95A21727D7A000458F2 /* FruitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C430A95921727D7A000458F2 /* FruitCell.m */; };
+		C430A96821753DA3000458F2 /* BagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C430A96721753DA3000458F2 /* BagTableViewController.m */; };
+		C43184EE2175E9F6003FBF45 /* BagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C43184ED2175E9F6003FBF45 /* BagTableViewCell.m */; };
+		C4AC551D2170F164008A4842 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC551C2170F164008A4842 /* AppDelegate.m */; };
+		C4AC55202170F164008A4842 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC551F2170F164008A4842 /* ViewController.m */; };
+		C4AC55232170F164008A4842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AC55212170F164008A4842 /* Main.storyboard */; };
+		C4AC55252170F165008A4842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AC55242170F165008A4842 /* Assets.xcassets */; };
+		C4AC55282170F165008A4842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AC55262170F165008A4842 /* LaunchScreen.storyboard */; };
+		C4AC552B2170F165008A4842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC552A2170F165008A4842 /* main.m */; };
+		C4AC55332170F470008A4842 /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC55322170F470008A4842 /* Loader.m */; };
+		C4AC55362170FCDA008A4842 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC55352170FCDA008A4842 /* Fruit.m */; };
+		C4AC55392170FE47008A4842 /* FruitLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC55382170FE47008A4842 /* FruitLoader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C41F8A732176374800389947 /* lol.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = lol.plist; sourceTree = "<group>"; };
+		C41F8A7521763BDD00389947 /* myPlistFile.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = myPlistFile.plist; sourceTree = "<group>"; };
+		C430A95821727D7A000458F2 /* FruitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FruitCell.h; sourceTree = "<group>"; };
+		C430A95921727D7A000458F2 /* FruitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FruitCell.m; sourceTree = "<group>"; };
+		C430A96621753DA3000458F2 /* BagTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BagTableViewController.h; sourceTree = "<group>"; };
+		C430A96721753DA3000458F2 /* BagTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BagTableViewController.m; sourceTree = "<group>"; };
+		C43184EC2175E9F6003FBF45 /* BagTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BagTableViewCell.h; sourceTree = "<group>"; };
+		C43184ED2175E9F6003FBF45 /* BagTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BagTableViewCell.m; sourceTree = "<group>"; };
+		C4AC55182170F164008A4842 /* Fruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AC551B2170F164008A4842 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4AC551C2170F164008A4842 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4AC551E2170F164008A4842 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C4AC551F2170F164008A4842 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C4AC55222170F164008A4842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4AC55242170F165008A4842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4AC55272170F165008A4842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4AC55292170F165008A4842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4AC552A2170F165008A4842 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4AC55312170F470008A4842 /* Loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
+		C4AC55322170F470008A4842 /* Loader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loader.m; sourceTree = "<group>"; };
+		C4AC55342170FCDA008A4842 /* Fruit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
+		C4AC55352170FCDA008A4842 /* Fruit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		C4AC55372170FE47008A4842 /* FruitLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FruitLoader.h; sourceTree = "<group>"; };
+		C4AC55382170FE47008A4842 /* FruitLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FruitLoader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4AC55152170F164008A4842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C41F8A6E2176031800389947 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC55342170FCDA008A4842 /* Fruit.h */,
+				C4AC55352170FCDA008A4842 /* Fruit.m */,
+				C4AC55312170F470008A4842 /* Loader.h */,
+				C4AC55322170F470008A4842 /* Loader.m */,
+				C4AC55372170FE47008A4842 /* FruitLoader.h */,
+				C4AC55382170FE47008A4842 /* FruitLoader.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C41F8A6F2176033600389947 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC55212170F164008A4842 /* Main.storyboard */,
+				C4AC55262170F165008A4842 /* LaunchScreen.storyboard */,
+				C430A95821727D7A000458F2 /* FruitCell.h */,
+				C430A95921727D7A000458F2 /* FruitCell.m */,
+				C43184EC2175E9F6003FBF45 /* BagTableViewCell.h */,
+				C43184ED2175E9F6003FBF45 /* BagTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C41F8A702176033E00389947 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC551B2170F164008A4842 /* AppDelegate.h */,
+				C4AC551C2170F164008A4842 /* AppDelegate.m */,
+				C4AC551E2170F164008A4842 /* ViewController.h */,
+				C4AC551F2170F164008A4842 /* ViewController.m */,
+				C430A96621753DA3000458F2 /* BagTableViewController.h */,
+				C430A96721753DA3000458F2 /* BagTableViewController.m */,
+				C4AC552A2170F165008A4842 /* main.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4AC550F2170F164008A4842 = {
+			isa = PBXGroup;
+			children = (
+				C4AC551A2170F164008A4842 /* Fruits */,
+				C4AC55192170F164008A4842 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4AC55192170F164008A4842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC55182170F164008A4842 /* Fruits.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4AC551A2170F164008A4842 /* Fruits */ = {
+			isa = PBXGroup;
+			children = (
+				C41F8A702176033E00389947 /* Controller */,
+				C41F8A6F2176033600389947 /* View */,
+				C41F8A6E2176031800389947 /* Model */,
+				C4AC55242170F165008A4842 /* Assets.xcassets */,
+				C4AC55292170F165008A4842 /* Info.plist */,
+				C41F8A732176374800389947 /* lol.plist */,
+				C41F8A7521763BDD00389947 /* myPlistFile.plist */,
+			);
+			path = Fruits;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4AC55172170F164008A4842 /* Fruits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AC552E2170F165008A4842 /* Build configuration list for PBXNativeTarget "Fruits" */;
+			buildPhases = (
+				C4AC55142170F164008A4842 /* Sources */,
+				C4AC55152170F164008A4842 /* Frameworks */,
+				C4AC55162170F164008A4842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fruits;
+			productName = Fruits;
+			productReference = C4AC55182170F164008A4842 /* Fruits.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4AC55102170F164008A4842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Екатерина";
+				TargetAttributes = {
+					C4AC55172170F164008A4842 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = C4AC55132170F164008A4842 /* Build configuration list for PBXProject "Fruits" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4AC550F2170F164008A4842;
+			productRefGroup = C4AC55192170F164008A4842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4AC55172170F164008A4842 /* Fruits */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4AC55162170F164008A4842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AC55282170F165008A4842 /* LaunchScreen.storyboard in Resources */,
+				C4AC55252170F165008A4842 /* Assets.xcassets in Resources */,
+				C41F8A7621763BDD00389947 /* myPlistFile.plist in Resources */,
+				C41F8A742176374800389947 /* lol.plist in Resources */,
+				C4AC55232170F164008A4842 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4AC55142170F164008A4842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C430A95A21727D7A000458F2 /* FruitCell.m in Sources */,
+				C4AC55362170FCDA008A4842 /* Fruit.m in Sources */,
+				C4AC55392170FE47008A4842 /* FruitLoader.m in Sources */,
+				C43184EE2175E9F6003FBF45 /* BagTableViewCell.m in Sources */,
+				C4AC55202170F164008A4842 /* ViewController.m in Sources */,
+				C430A96821753DA3000458F2 /* BagTableViewController.m in Sources */,
+				C4AC552B2170F165008A4842 /* main.m in Sources */,
+				C4AC55332170F470008A4842 /* Loader.m in Sources */,
+				C4AC551D2170F164008A4842 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4AC55212170F164008A4842 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4AC55222170F164008A4842 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4AC55262170F165008A4842 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4AC55272170F165008A4842 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4AC552C2170F165008A4842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4AC552D2170F165008A4842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4AC552F2170F165008A4842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G5GUBYCP6;
+				INFOPLIST_FILE = Fruits/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ekaterina.Fruits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4AC55302170F165008A4842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G5GUBYCP6;
+				INFOPLIST_FILE = Fruits/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ekaterina.Fruits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4AC55132170F164008A4842 /* Build configuration list for PBXProject "Fruits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AC552C2170F165008A4842 /* Debug */,
+				C4AC552D2170F165008A4842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4AC552E2170F165008A4842 /* Build configuration list for PBXNativeTarget "Fruits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AC552F2170F165008A4842 /* Debug */,
+				C4AC55302170F165008A4842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4AC55102170F164008A4842 /* Project object */;
+}
