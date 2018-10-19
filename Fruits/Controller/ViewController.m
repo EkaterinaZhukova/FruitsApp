@@ -25,6 +25,8 @@
 
 - (void)viewDidLoad {
     NSNotificationCenter * nc = [NSNotificationCenter defaultCenter];
+//    [[NSUserDefaults standardUserDefaults]removeObjectForKey:dictUserDefaults];
+//    [[NSUserDefaults standardUserDefaults]removeObjectForKey:totalUserDeafults];
     [nc addObserver:self selector:@selector(appMoveTerminate) name:UIApplicationWillTerminateNotification object:nil];
     [nc addObserver:self selector:@selector(appMoveTerminate) name:UIApplicationWillResignActiveNotification object:nil];
     [super viewDidLoad];
@@ -34,6 +36,7 @@
     self.countFruits = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     NSLog(@"%@",self.countFruits);
     self.totalSum = [[NSUserDefaults standardUserDefaults]floatForKey:totalUserDeafults];
+    NSLog(@"%1.2f",self.totalSum);
     self.totalSumLabel.text = [[NSString stringWithFormat:@"%1.2f",self.totalSum] stringByAppendingString:@"$"];
     __weak ViewController* weakSelf = self;
     
@@ -56,7 +59,9 @@
     NSError *error;
     NSData * data = [NSKeyedArchiver archivedDataWithRootObject:self.countFruits requiringSecureCoding:FALSE error:&error];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:dictUserDefaults];
-    [[NSUserDefaults standardUserDefaults]setFloat:self.totalSum forKey:totalUserDeafults];
+    [[NSUserDefaults standardUserDefaults] setFloat:self.totalSum forKey:totalUserDeafults];
+    NSLog(@"%1.2f",self.totalSum);
+
 
 }
 - (void)appMoveBackGround{
@@ -64,11 +69,6 @@
 }
 - (IBAction)swipeToNewSegue:(id)sender {
     [self performSegueWithIdentifier:bagSegueID sender:self];
-}
-    
--(IBAction)didTap:(id)sender{
-    [self.tableView reloadData];
-    [[NSUserDefaults standardUserDefaults]removeObjectForKey:dictUserDefaults];
 }
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
    

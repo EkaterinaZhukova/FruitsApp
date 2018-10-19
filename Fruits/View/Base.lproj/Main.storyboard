@@ -127,14 +127,6 @@
                                         </subviews>
                                         <gestureRecognizers/>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0P-2A-Huk">
-                                        <rect key="frame" x="250" y="89" width="117" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Test 1"/>
-                                        <connections>
-                                            <action selector="didTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TA8-h6-ixN"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
