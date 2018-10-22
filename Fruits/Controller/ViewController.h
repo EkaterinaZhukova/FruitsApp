@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FruitLoader.h"
-@interface ViewController : UIViewController<UITableViewDataSource>
+@interface ViewController : UIViewController
     @property (nonatomic, strong) NSArray *fruitArray;
     @property (nonatomic, strong) NSMutableDictionary *countFruits;
 

@@ -26,7 +26,6 @@
     
     NSInteger newValue = (NSInteger) self.stepper.value;
     self.currentCount.text = [NSString stringWithFormat:@"%ld",(long)newValue];
-    
     _fruitCountBlock(newValue);
 
 }
